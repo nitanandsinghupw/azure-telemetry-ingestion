@@ -1,0 +1,21 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+
+    "EventHubConnection": "<Event Hubs connection string with Listen rights>",
+    "EventHubName": "telemetry",
+    "EventHubConsumerGroup": "ingestion",
+
+    "CosmosConnection": "<Cosmos DB connection string>",
+    "CosmosDatabase": "telemetry",
+    "CosmosContainer": "events",
+    "CosmosDeadLetterContainer": "deadletters",
+
+    "PartitionBucketMinutes": "60",
+    "PartitionShardCount": "8",
+    "MaxWriteConcurrency": "32",
+    "MaxWriteAttempts": "8"
+  }
+}
